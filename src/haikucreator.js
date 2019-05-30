@@ -20,8 +20,8 @@ export class HaikuCreator {
         for(let j = 0; j < splitWord.length; j++) {
           console.log(splitWord[j]);
           if(vowels.includes(splitWord[j])) {
-            console.log("char is vowel");
-            if(j == 'e' && j == splitWord.length-1 || vowels.includes(splitWord[j+1])) {
+            console.log(splitWord.length);
+            if(splitWord[j] == 'e' && j == splitWord.length-1 || vowels.includes(splitWord[j+1])) {
               console.log("ignore e/double");
               syllableCount;
             } else if(vowels.includes(splitWord[j])) {
