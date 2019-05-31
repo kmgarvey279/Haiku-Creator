@@ -1,25 +1,31 @@
 export class AgeCalculator {
-  constructor(inputtedYear, inputtedMonth, inputtedDay) {
-    this.birthDate = new Date(inputtedYear, inputtedMonth, inputtedDay);
+  constructor(birthday) {
+    this.birthDate = new Date(birthday);
+    this.currentDate = new Date();
   }
 
-  GetEarthAge() {
-    return (Date.now().getFullYear - this.birthDate.getFullYear());
+  getBirthDate() {
+    return this.birthDate;
   }
 
-  GetMercuryYears() {
-    return Math.floor(GetEarthAge() * .24);
+  getEarthAge() {
+    let age = this.currentDate.getFullYear() - this.birthDate.getFullYear();
+    return age;
   }
 
-  GetVenusYears() {
-    return Math.floor(GetEarthAge() * .62);
+  getMercuryAge() {
+    return Math.floor(this.getEarthAge() * .24);
   }
 
-  GetMarsYears() {
-    return Math.floor(GetEarthAge() * 1.88);
+  getVenusAge() {
+    return Math.floor(this.getEarthAge() * .62);
   }
 
-  GetJupiterYears() {
-    return Math.floor(GetEarthAge() * 11.86);
+  getMarsAge() {
+    return Math.floor(this.getEarthAge() * 1.88);
+  }
+
+  getJupiterAge() {
+    return Math.floor(this.getEarthAge() * 11.86);
   }
 }
