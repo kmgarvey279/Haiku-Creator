@@ -14,4 +14,24 @@ describe('AgeCalculator', function() {
     expect(newCalculator.getEarthAge()).toEqual(32);
   });
 
+  it('should take the inputted birthday and return the correct age in Mercury Years', function() {
+    let newCalculator = new AgeCalculator('04-04-1987');
+    expect(newCalculator.getMercuryAge()).toEqual(7);
+  });
+
+  it('should take the inputted birthday and return the correct age in Venus Years', function() {
+    let newCalculator = new AgeCalculator('04-04-1987');
+    expect(newCalculator.getVenusAge()).toEqual(19);
+  });
+
+  it('should take the inputted birthday and return the correct age in Mars Years', function() {
+    let newCalculator = new AgeCalculator('04-04-1987');
+    expect(newCalculator.getMarsAge()).toEqual(60);
+  });
+
+  it('should take the inputted birthday and return the correct age in Jupiter Years', function() {
+    let newCalculator = new AgeCalculator('04-04-1987');
+    expect(newCalculator.getJupiterAge()).toEqual(379);
+  });
+
 });
