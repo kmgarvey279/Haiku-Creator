@@ -4,31 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Haiku Creator</title>
+  <title>Super Galactic Age Calculator</title>
 </head>
+
 <body>
 
   <div class="container">
-    <h1>Haiku Creator</h1>
-    <h3>Enter 3 lines and check if it's a haiku:</h3>
+    <h1>Super Galactic Age Calculator</h1>
+    <h3>Enter your age to check how old you would be on another planet:</h3>
 
-      <form id="createHaiku">
+      <form id="enter-age">
         <div class="form-group">
-      <input type="type" id="line1" required><br><br>
-      <input type="type" id="line2" required><br><br>
-      <input type="type" id="line3" required><br><br>
+          <input type="number" id="earthAge" required><br>
 
-      <button type="submit" class="btn">Find out!</button>
-      </div>
+          <button type="submit" class="btn">Find out!</button>
+        </div>
       </form>
-    <div class="haikuResult">
-      <h4>Your poem:</h4>
+
+    <div class="age-results">
+      <h4>Your age is...</h4>
       <ul>
         <li><span id="result1"></span></li>
         <li><span id="result2"></span></li>
         <li><span id="result3"></span></li>
       </ul>
-      <h4>...is <span id="result"></span>a haiku!</h4>
     </div>
 </body>
 </html>
