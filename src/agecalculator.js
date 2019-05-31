@@ -28,4 +28,14 @@ export class AgeCalculator {
   getJupiterAge() {
     return Math.floor(this.getEarthAge() * 11.86);
   }
+
+  getLifeExpectancy(gender) {
+    if (gender == "female") {
+      return (72 - this.getEarthAge());
+    } else if (gender == "male") {
+      return (68 - this.getEarthAge());
+    } else {
+      return (71 - this.getEarthAge());
+    }
+  }
 }
