@@ -1,6 +1,6 @@
-import { HaikuCreator } from './../src/haikucreator.js';
+import { AgeCalculator } from './../src/agecalculator.js';
 
-describe('HaikuCreator', function() {
+describe('AgeCalculator', function() {
   it('should test whether three lines have been entered', function() {
     var haiku = new HaikuCreator("line1", "line2", "line3");
     expect(haiku.line1).toEqual("line1");

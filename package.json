@@ -1,7 +1,7 @@
 {
   "name": "webpack",
   "version": "1.0.0",
-  "description": "Ping pong counter",
+  "description": "Super Galactic Age Calculator",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start karma.conf.js",
@@ -14,7 +14,7 @@
     "type": "git"
   },
   "keywords": [],
-  "author": "Tessa Sullivan",
+  "author": "Kevin Garvey",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.3.1",
