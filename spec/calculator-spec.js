@@ -37,14 +37,19 @@ describe('AgeCalculator', function() {
       expect(newCalculator.getLifeExpectancy()).toEqual(39);
   });
 
-  it('should return 72 (the global average female lifespan) subtracted by inputted age if female is selected for gender', function() {
+  it('should return the national average subtracted by the inputted age if nationality is selected', function() {
       let newCalculator = new AgeCalculator('04-04-1987');
-      expect(newCalculator.getLifeExpectancy("female")).toEqual(40);
+      expect(newCalculator.getLifeExpectancy('UNITED STATES', "", false)).toEqual(48);
   });
 
-  it('should return 68 (the global average male lifespan) subtracted by inputted age if male is selected for gender', function() {
+  it('should subtract one year from the result if male is selected for gender', function() {
       let newCalculator = new AgeCalculator('04-04-1987');
-      expect(newCalculator.getLifeExpectancy("male")).toEqual(36);
+      expect(newCalculator.getLifeExpectancy("", "male", false)).toEqual(38);
+  });
+
+  it('should subtract ten years from the result if yes is selected for smoker', function() {
+      let newCalculator = new AgeCalculator('04-04-1987');
+      expect(newCalculator.getLifeExpectancy("", "male", true)).toEqual(28);
   });
 
 });
