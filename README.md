@@ -1,4 +1,4 @@
-receive## _Super Galactic Space Age Calculator_
+## _Super Galactic Space Age Calculator_
 
 ### _***Kevin Garvey***_
 
@@ -6,17 +6,11 @@ receive## _Super Galactic Space Age Calculator_
 ##### _The program takes the user's date of birth as an input, and returns their age in Earth, Mercury, Venus, Mars, and Jupiter years. In addition, the user can recieve their approximate life expectancy input and enter additional demographic information to get a more accurate result. 05/31/2019_
 
 ### _Specs_
-The user is first prompted to enter their date of birth. The program will return their age in full years on multiple planets.
-input: 04/04/1987
-output: Earth: 32, Mercury: 7, Venus: 19, Mars: 60, Jupiter: 379
-
-The user can also check their life expectancy in remaining years.
-input: 04/04/1987
-output: 39
-
-Entering additional information will result in a more accurate number.
-input: 04/04/1987, gender: male
-output: 36   
+|Behavior|Input|Output|
+|---|---|---|
+|The user is first prompted to enter their date of birth. The program will return their age in full years on multiple planets.|04/04/1987|Earth: 32, Mercury: 7, Venus: 19, Mars: 60, Jupiter: 379|
+|The user can also check their life expectancy in remaining years.|04/04/1987|39|
+|Entering additional information will result in a more accurate number.|04/04/1987, gender: male|36|   
 
 
 ### Setup/Installation
